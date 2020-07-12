@@ -1,0 +1,26 @@
+.logo {
+  color: $accent-focus-color;
+  font-family: Raleway, cursive;
+  @include font-line(24px, 28px);
+  text-decoration: none;
+  display: inline-block;
+  padding: 16px 0;
+  white-space: nowrap;
+}
+
+.logo-part {
+  color: $main-text-color;
+}
+
+@media screen and (min-width: 768px) {
+  .logo {
+    padding: 26px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding: 0;
+    @include font-line(26px, 31px);
+  }
+}

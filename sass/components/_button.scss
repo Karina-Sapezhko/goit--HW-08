@@ -1,0 +1,21 @@
+.button {
+  height: 50px;
+  width: 200px;
+  color: $white-text-color;
+  background-color: $accent-focus-color;
+  font-weight: 700;
+  @include font-line(16px, 30px);
+  letter-spacing: 0.06em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 4px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: $cubic;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $white-text-color;
+    color: $accent-focus-color;
+  }
+}
