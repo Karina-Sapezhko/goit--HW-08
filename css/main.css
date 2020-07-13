@@ -602,12 +602,17 @@ img {
 }
 
 .hero {
-  text-align: center;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0 auto;
+  text-align: center;
+  margin: 0;
   height: 400px;
   background-color: #757575;
   margin-left: auto;
@@ -656,9 +661,15 @@ img {
 }
 
 .hero-holder {
-  display: inline-block;
+  display: block;
   max-width: 360px;
-  margin: 0 auto;
+  margin: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-holder {
+    max-width: 700px;
+  }
 }
 
 .hero-title {
