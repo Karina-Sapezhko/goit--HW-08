@@ -3,14 +3,7 @@
   padding-bottom: 60px;
 }
 
-.item-features {
-  margin: 15px;
-  width: calc((100% - 30px) / 1);
-}
-
 .list-features {
-  margin: -15px;
-
   & .frame {
     height: 120px;
     background-color: #f5f4fa;
@@ -40,9 +33,14 @@
     margin-bottom: 0;
   }
 }
-
+@media screen and (max-width: 767px) {
+  .item-features + .item-features {
+    margin-top: 30px;
+  }
+}
 @media screen and (min-width: 768px) {
   .list-features {
+    margin: -15px;
     display: flex;
     flex-wrap: wrap;
     & .title {
@@ -50,6 +48,7 @@
     }
   }
   .item-features {
+    margin: 15px;
     width: calc((100% - 30px * 2) / 2);
   }
 }

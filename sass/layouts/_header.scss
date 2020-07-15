@@ -35,8 +35,8 @@
     display: none;
   }
 }
-.icon-menu:hover,
-.icon-cross:hover {
+.menu-btn:hover .icon-menu,
+.menu-btn:hover .icon-cross {
   fill: $accent-focus-color;
 }
 

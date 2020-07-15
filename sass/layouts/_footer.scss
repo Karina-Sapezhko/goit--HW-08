@@ -4,7 +4,8 @@
 
 .container.bottom {
   text-align: center;
-  padding: 60px 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .logo-address {
   & .logo {
@@ -17,8 +18,6 @@
 }
 
 .address {
-  // display: flex;
-  // flex-direction: column;
   font-size: 14px;
   line-height: 1.7;
   font-style: normal;
@@ -56,12 +55,6 @@
 }
 .svg-socials.fill {
   fill: $white-text-color;
-}
-
-.join-in {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .call-link {
@@ -125,24 +118,20 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -15px;
   }
 
   .logo-address {
-    margin: 15px;
-    width: calc((100% - 30px * 2) / 2);
+    margin-right: 30px;
+    width: calc((100% - 30px) / 2);
   }
 
   .join-in {
-    margin: 15px;
-    width: calc((100% - 30px * 2) / 2);
+    width: calc((100% - 30px) / 2);
   }
 
   .container.bottom .call {
-    margin: 15px;
-    width: calc((100% - 30px) / 1.5);
-    margin-top: 45px;
-    // width: 450px;
+    margin-top: 60px;
+    min-width: 450px;
   }
 }
 
@@ -154,17 +143,21 @@
   }
 
   .logo-address {
-    width: calc((100% - 30px * 3) / 4);
+    width: calc((100% - 30px * 2) / 4);
   }
 
   .join-in {
-    width: calc((100% - 30px * 3) / 4);
-    align-items: flex-start;
+    margin-right: 30px;
+    width: calc((100% - 30px * 2) / 4);
   }
 
   .container.bottom .call {
-    margin-top: 15px;
+    margin-top: 0;
     width: calc((100% - 30px * 3) / 2);
+  }
+
+  .list-socials.position {
+    justify-content: flex-start;
   }
 
   .call-form {
