@@ -40,41 +40,6 @@
   }
 }
 
-.list-socials {
-  display: flex;
-  justify-content: center;
-
-  & .item-socials + .item-socials {
-    margin-left: 10px;
-  }
-
-  & .link-socials {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    border-radius: 50px;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    &:hover .svg-socials,
-    &:focus .svg-socials {
-      fill: $white-text-color;
-    }
-  }
-
-  & .link-socials:hover,
-  & .link-socials:focus {
-    background-color: #2196f3;
-  }
-
-  & .svg-socials {
-    width: 20px;
-    height: 20px;
-    fill: #afb1b8;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-}
-
 @media screen and (max-width: 767px) {
   .list-team {
     .item-team + .item-team {

@@ -1,64 +1,66 @@
-// .menu-btn {
-//   display: inline-flex;
-//   margin: 0;
-//   margin-left: auto;
-//   padding: 0;
-//   border: none;
-//   background-color: transparent;
-// }
+.menu-btn {
+  margin-left: auto;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  outline-style: none;
+  &.is-open .icon-menu {
+    display: block;
+  }
+  & .icon-menu {
+    display: none;
+  }
+  &.is-open .icon-cross {
+    display: none;
+  }
+  & .icon-cross {
+    display: block;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-btn:hover .icon-menu,
+.menu-btn:hover .icon-cross {
+  fill: $accent-focus-color;
+}
 
-// .menu-btn .icon-cross {
-//   display: none;
-// }
+@media screen and (max-width: 767px) {
+  .holder {
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-container {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+    border-top: 1px solid #ececec;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.16), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 4px 8px rgba(0, 0, 0, 0.04);
+    &.is-open {
+      display: none;
+    }
+  }
 
-// .menu-btn.is-open .icon-cross {
-//   display: block;
-// }
+  .list-site-nav {
+    margin-bottom: 60px;
+    .item-nav + .item-nav {
+      margin-top: 40px;
+    }
+  }
 
-// .menu-btn.is-open .icon-menu {
-//   display: none;
-// }
-
-// .menu-container {
-//   //   height: 393px;
-//   padding: 60px;
-//   text-align: center;
-//   font-size: 20px;
-//   background-color: white;
-// }
-
-// @media screen and (max-width: 767px) {
-//   .menu-container {
-//     display: none;
-
-//     position: absolute;
-//     top: 100%;
-//     left: 0;
-//     width: 100%;
-
-//     &.is-open {
-//       display: block;
-//     }
-//   }
-
-//   .list-site-nav {
-//     text-align: center;
-//   }
-
-//   .list-site-nav .link {
-//     display: inline-block;
-//     padding: 8px 0;
-//   }
-// }
-
-// @media screen and (min-width: 768px) {
-//   .menu-btn {
-//     display: none;
-//   }
-
-//   .holder {
-//     display: flex;
-//     align-items: center;
-//     flex-grow: 1;
-//     // justify-content: space-around;
-//   }
+  .list-info-nav {
+    .item-contacts + .item-contacts {
+      margin-top: 16px;
+    }
+  }
+}
